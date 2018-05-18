@@ -1,7 +1,9 @@
 //BEGIN DESCRIPTION
 /*
  * Random Motion
- * Really basic use of 
+ * Really basic use of SDL2 and stdlib's rand function.
+ * Use of SDL2's RenderSetLogicalSize - resize the window
+ * 
  */
 //END   DESCRIPTION
 

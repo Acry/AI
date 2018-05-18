@@ -7,7 +7,7 @@ endef
 CFLAGS   = -Wall -Wextra -mtune=native `sdl2-config --cflags`
 LDFLAGS  = `sdl2-config --libs` -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lSDL2_gfx -lm
 
-TARGETS = random_motion
+TARGETS = random_motion tracking
 
 .PHONY: all
 all: $(TARGETS)
@@ -17,6 +17,10 @@ dummy: dummy.c
 	$(call colorecho,"$@ success. ./\"$@\" to execute.")
 
 random_motion:   helper.c  random_motion.c
+	@cc $(CFLAGS) -o $@ $+ $(LDFLAGS)
+	$(call colorecho,"$@ success. ./\"$@\" to execute.")
+
+tracking:   helper.c  tracking.c
 	@cc $(CFLAGS) -o $@ $+ $(LDFLAGS)
 	$(call colorecho,"$@ success. ./\"$@\" to execute.")
 

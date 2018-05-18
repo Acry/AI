@@ -6,7 +6,7 @@ SDL_Renderer 	*Renderer	=NULL;
 void init(void)
 {
 SDL_Init(SDL_INIT_EVERYTHING);
-// TTF_Init();
+TTF_Init();
 
 Window = SDL_CreateWindow("", 0, 0, 0, 0, SDL_WINDOW_HIDDEN|SDL_WINDOW_RESIZABLE);
 
@@ -31,7 +31,7 @@ void exit_(void)
 
 SDL_DestroyRenderer(Renderer);
 SDL_DestroyWindow(Window);
-// TTF_Quit();
+TTF_Quit();
 SDL_Quit();
 
 }
