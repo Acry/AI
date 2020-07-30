@@ -1,14 +1,18 @@
-### This is an introductory series about Artificial intelligence (AI)
+# This is an introductory series about Artificial intelligence (AI)
 
 First topic moving in pattern:  
-**Random Motion**  
- * Really basic use of libSDL2 and stdlib's rand function.
- * Use of SDL2's RenderSetLogicalSize - resize the window
+**Random Motion**
 
-**Tracking**  
- * Really basic tracking/evading method.  
+![](random.gif)
 
-Useful links:  
-[SDL2](https://www.libsdl.org/) [SDL-Discourse](https://discourse.libsdl.org) [More Example Code](https://gist.github.com/Acry/baa861b8e370c6eddbb18519c487d9d8)
+- Really basic use of libSDL2 and stdlib's rand function.
+- Use of SDL2's RenderSetLogicalSize - resize the window
 
-[Get in touch on SDL-Discourse](https://discourse.libsdl.org/u/Acry/summary)
+**Tracking**
+
+![](tracking.gif)
+
+- Really basic tracking/evading method.
+
+Useful links:
+[My SDL2-C page](https://acry.github.io/c.html)
